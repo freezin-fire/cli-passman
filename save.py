@@ -13,7 +13,7 @@ class Saver:
         with open(self.file, "r") as file:
             data = file.read()
 
-            if os.stat(slef.file).st_size == 0:
+            if os.stat(self.file).st_size == 0:
                 return []
 
             return json.loads(data)
